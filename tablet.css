@@ -1,0 +1,142 @@
+
+
+/*==================================*/
+/* Low resolution  Tablets, Ipads */
+/* @media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+} */
+
+/*==================================*/
+/* Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        /* background-color: blue; */
+        font-size: 0.96em;
+    }
+    #header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom:80px;
+        margin-top:60px;
+    }
+    #main-logo-div{
+        flex:1;
+        padding: 0% 5% 0% 5%;
+    }
+    #top-nav{
+        flex:4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login-button-div{
+        flex:2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #header img{
+        width: 100px;
+        height: auto;
+    }
+    #header ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        max-width: 90%;
+    }
+    #header li{
+        padding-right:20px;
+    }
+    #header button{
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 40px;
+        font-weight: bolder;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.833);
+    }
+
+    /*---START OF MAIN BODY SECTION---*/
+    .main-body-section{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-auto-rows: minmax(10vw, auto);
+        margin-bottom: 100px;
+    }
+    .title-text{
+        grid-column: 1 / 2 ;
+        padding-left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-text h1{
+        font-size: 2.5em;
+    }
+    .mainimages-div{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainimages-div img{
+        width: 25vw;
+        height: auto;
+    }
+    .what-we-do-div{
+        grid-column: 1 / 2;
+        padding-left: 70px;
+    }
+    .what-we-do-div h4{
+        color: rgb(240, 54, 54)
+    }
+    .what-we-do-div button{
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        font-weight: bolder;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.833);
+    }
+    /*---END OF MAIN BODY SECTION---*/
+
+    .bottom-items-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px 70px 0px;
+    }
+    .bottom-items-section>*{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3em;
+        width: fit-content;
+        align-content: center;
+        background-color: white;
+        box-shadow: 0px 0px 8px black;
+    }
+    .bottom-items-section img{
+        width: 150px;
+        height: 150px;
+    }
+    .bottom-items-section button{
+        margin-bottom: 10px;
+    }
+    .quality-service-div, .spacious-gym-div, .unique-programs-div, .group-classes-div{
+        width: 300px;
+        height: 330px;
+        margin:15px 15px 20px 15px;
+        padding:5px;
+    }
+}

@@ -6,14 +6,33 @@ body{
     flex-direction:column;
     /* align-content: center; */
 }
-div, nav, section{
+/* div, nav, section{
     border: 1px solid black;
-}
+} */
 button{
     font-size: 0.9em;
-    background-color: rgb(11, 90, 239);
+    background-color: rgba(64, 64, 233, 0.925);
 }
 
+.bottom-items-section img{
+    width: 50px;
+    height: auto;
+}
+.bottom-items-section h6{
+    position: relative;
+    margin-top:10px;
+}
+.bottom-items-section p{
+    position: relative;
+    margin-top:-15px;
+}
+.bottom-items-section button{
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: auto;
+}
 
 /*links*/
 a:link{
@@ -41,46 +60,21 @@ Media Query sizes  bellow are copied from Geeks for geeks:
 https://www.geeksforgeeks.org/how-to-target-desktop-tablet-and-mobile-using-media-query/
 on Monday october 31st 2022
 */
-
-
-/*==================================*/
-/* Mobile Devices */
-@media (max-width: 480px) {
-    body {
-        background-color: red;
-    }
-}
-  
-
-/*==================================*/
-/* Low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-    body {
-        background-color: yellow;
-    }
-}
-
-/*==================================*/
-/* Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px){
-    body {
-        background-color: blue;
-    }
-}
-  
+    
 
 /*==================================*/
 /* Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px){
+/* @media (min-width: 1025px) and (max-width: 1280px){
     body {
         background-color: green;
     }
-}
+} */
  
 
 /*==================================*/
-/* Large screens */
-@media (min-width: 1281px) {
+/* Large screens 
+(min-width: 1281px) */
+@media (min-width: 1025px) {
     body {
         background-color: white;
         margin:0px;
@@ -94,7 +88,8 @@ on Monday october 31st 2022
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin-bottom:20px;
+        margin-bottom:80px;
+        margin-top:60px;
     }
     #main-logo-div{
         flex:1;
@@ -143,11 +138,11 @@ on Monday october 31st 2022
         display: grid;
         grid-template-columns: 40% 60%;
         grid-auto-rows: minmax(10vw, auto);
-        margin-bottom: 30px;
+        margin-bottom: 100px;
     }
     .title-text{
         grid-column: 1 / 2 ;
-        padding-left: 30px;
+        padding-left: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -160,12 +155,12 @@ on Monday october 31st 2022
         align-items: center;
     }
     .mainimages-div img{
-        width: 400px;
+        width: 25vw;
         height: auto;
     }
     .what-we-do-div{
         grid-column: 1 / 2;
-        padding-left: 30px;
+        padding-left: 70px;
     }
     .what-we-do-div h4{
         color: rgb(240, 54, 54)
@@ -189,13 +184,13 @@ on Monday october 31st 2022
         align-items: center;
         align-self: center;
         margin-top: 20px;
-        background-color: rgb(189, 189, 189);
+        background-color: rgb(219, 216, 216);
         width: 80%;
-        height: 250px;
-        /* border: 1px solid black; */
+        height: 270px;
         border-radius: 30px;
+        margin-bottom: 80px;
     }
-    .bottom-items-section img{
+    /* .bottom-items-section img{
         width: 50px;
         height: auto;
     }
@@ -213,7 +208,7 @@ on Monday october 31st 2022
         border-radius: 10px;
         width: 80px;
         height: auto;
-    }
+    } */
     .quality-service-div, .spacious-gym-div, .unique-programs-div, .group-classes-div{
         width: 200px;
         height: 200px;

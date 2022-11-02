@@ -1,155 +1,157 @@
-/* 
-Media Query sizes  bellow are copied from Geeks for geeks: 
-https://www.geeksforgeeks.org/how-to-target-desktop-tablet-and-mobile-using-media-query/
-on Monday october 31st 2022
-*/
-
 /*==================================*/
-/* 
-Mobile Devices 
-(max-width: 480px) 
-*/
 /*for mobiles and low resolution tablets ->*/
 @media (max-width: 767px) {
-    body {
-        /* background-color: orange; */
-        font-size: 0.9em;
-        padding-top: 50px;
-        margin:0px;
-    }
-    #main-logo-div{
-        display: flex;
-        justify-content: center;
-        margin:0px 50px 20px 0px;
-    }
-    #main-logo-div img{
-        width: 100px;
-        height: 80px;
-    }
-    #top-nav{
-        border: 1px solid black;
-        height: 100px;
-    }
-    #top-nav ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:center;
-    }
-    #top-nav ul li{
-        background-color: rgb(172, 222, 255);
-        width: 110px;
-        height:auto;
-        border-radius: 15px;
-        margin: 0px 10px 14px 0px;
-        padding: 6px;
-        text-align: center;
-        box-shadow: 1px 1px 5px black;
-    }
-    #login-button-div{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top:20px;
-    }
-    #login-button-div button{
-        position:relative;
-        width: 100px;
-        height: 50px;
-        border-radius: 15px;
-        box-shadow: 2px 3px 5px black;
-        color: white;
-    }
+	body {
+		/* background-color: orange; */
+		font-size: 0.9em;
+		padding-top: 50px;
+		margin: 0px;
+	}
 
-    .main-body-section{
-        display: flex;
-        flex-direction: column;
-        margin-top:30px;
-    }
-    .title-text{
-        order: 1;
-        font-size:2em;
-        width: 300px;
-        padding-left: 3vw;
-    }
-    .what-we-do-div{
-        order:3;
-        margin-top: 30px;
-        border:1px solid;
-        border-color: black;
-        padding: 20px;
-        width: 80%;
-        align-self:center;
-    }
-    .what-we-do-div h4{
-        color:red;
-    }
-    .what-we-do-div button{
-        width:100px;
-        height:30px;
-        color: white;
-        border-radius: 13px;
-        position: relative;
-        left: 270px;
-    }
-    .mainimages-div{
-        order:2;
-        align-self: center;
-        position: relative;
-    }
-    .mainimages-div img{
-        position:absolute;
-        top: -210px;
-        left: 50px;
-        width:33vw;
-    }
-    
-    .bottom-items-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        margin-bottom:50px;
-    }
-    .bottom-items-section>*{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.3em;
-        width: fit-content;
-        align-content: center;
-        background-color: white;
-        box-shadow: 0px 0px 8px black;
-    }
-    .bottom-items-section img{
-        width: 150px;
-        height: 150px;
-    }
-    .bottom-items-section button{
-        margin-bottom: 10px;
-    }
-    .quality-service-div, .spacious-gym-div, .unique-programs-div, .group-classes-div{
-        width: 65vw;
-        height: 330px;
-        margin:15px 0px 20px 0px;
-        padding:5px;
-    }
-    
-    footer{
-        width: 100%;
-        height: 100px;
-    }
+	/* START OF HEAD SECTION */
+	#main-logo-div {
+		display: flex;
+		justify-content: center;
+		margin: 0px 50px 20px 0px;
+	}
+	#main-logo-div img {
+		width: 100px;
+		height: 80px;
+	}
+	#top-nav {
+		border: 1px solid black;
+		height: 100px;
+	}
+	#top-nav ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#top-nav ul li {
+		background-color: rgb(172, 222, 255);
+		width: 110px;
+		height: auto;
+		border-radius: 15px;
+		margin: 0px 10px 14px 0px;
+		padding: 6px;
+		text-align: center;
+		box-shadow: 1px 1px 5px black;
+	}
+	#login-button-div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 20px;
+	}
+	#login-button-div button {
+		position: relative;
+		width: 100px;
+		height: 50px;
+		border-radius: 15px;
+		box-shadow: 2px 3px 5px black;
+		color: white;
+	}
+	/* START MAIN BODY SECTION */
+	.main-body-section {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+	}
+	.title-text {
+		order: 1;
+		font-size: 2em;
+		width: 300px;
+		padding-left: 3vw;
+	}
+	.what-we-do-div {
+		order: 3;
+		margin-top: 30px;
+		border: 1px solid;
+		border-color: black;
+		padding: 20px;
+		width: 80%;
+		align-self: center;
+	}
+	.what-we-do-div h4 {
+		color: red;
+	}
+	.what-we-do-div button {
+		width: 100px;
+		height: 30px;
+		color: white;
+		border-radius: 13px;
+		position: relative;
+		left: 270px;
+	}
+	.mainimages-div {
+		order: 2;
+		align-self: center;
+		position: relative;
+	}
+	.mainimages-div img {
+		position: absolute;
+		top: -210px;
+		left: 50px;
+		width: 33vw;
+	}
+	/* START OF BOTTOM-ITEMS SECTION */
+	.bottom-items-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.bottom-items-section > * {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.3em;
+		width: fit-content;
+		align-content: center;
+		background-color: white;
+		box-shadow: 0px 0px 8px black;
+	}
+	.bottom-items-section img {
+		width: 150px;
+		height: 150px;
+	}
+	.bottom-items-section button {
+		margin-bottom: 10px;
+	}
+	.quality-service-div,
+	.spacious-gym-div,
+	.unique-programs-div,
+	.group-classes-div {
+		width: 65vw;
+		height: 330px;
+		margin: 15px 0px 20px 0px;
+		padding: 5px;
+	}
+	/* FOOTER */
+	footer {
+		width: 100%;
+		height: 100px;
+	}
 
-
-    /* animations */
-    .what-we-do-div {
-        animation: colorwheel 10s ease-in-out infinite;
-    }
-    @keyframes colorwheel{
-        0%{border-color:black}
-        33%{border-color:blue}
-        66%{border-color:red}
-        100%{border-color:black}
-    }
+	/* animations  for mobile only view*/
+	.what-we-do-div {
+		animation: colorwheel 10s ease-in-out infinite;
+	}
+	@keyframes colorwheel {
+		0% {
+			border-color: black;
+		}
+		33% {
+			border-color: blue;
+		}
+		66% {
+			border-color: red;
+		}
+		100% {
+			border-color: black;
+		}
+	}
 }

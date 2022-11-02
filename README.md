@@ -1,4 +1,4 @@
-# exercize2-landingpage
+# exercize1-landingpage
 front end landing page exercise. guide:  https://dribbble.com/shots/18271454-Web-site-design-landing-page-home-page-ui
 
 

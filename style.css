@@ -10,6 +10,10 @@ body {
 	background-color: blue;
 	animation: pulse 3s ease-in-out infinite;
 }
+#header button:hover{
+	animation:none;
+	color: yellow;
+}
 
 footer {
 	padding-top: 20px;
@@ -49,6 +53,11 @@ button {
 	border-radius: 10px;
 	width: 80px;
 	height: auto;
+}
+.nav-options-picker{ /*this makes sure 'options' doesn;t show on large screens*/
+	display: none;
+	font-size: 3em;
+	margin-left: 1em;
 }
 
 /*links*/

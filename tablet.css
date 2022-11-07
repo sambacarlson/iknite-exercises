@@ -62,7 +62,7 @@
 	}
 	.title-text {
 		grid-column: 1 / 2;
-		padding-left: 50px;
+		padding-left: 8vw;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -83,7 +83,7 @@
 	}
 	.what-we-do-div {
 		grid-column: 1 / 2;
-		padding-left: 70px;
+		padding-left: 8vw;
 	}
 	.what-we-do-div h4 {
 		color: rgb(240, 54, 54);
@@ -95,13 +95,14 @@
 		width: 120px;
 		height: 40px;
 		font-weight: bolder;
-		box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.833);
 	}
 
 	/*---START OF BOTTOM-ITEMS SECTION---*/
 	.bottom-items-section {
 		display: flex;
+		background-color: #f3f5f7;
 		flex-direction: row;
+		padding:40px 0px;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;

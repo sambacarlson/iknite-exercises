@@ -15,18 +15,21 @@
         #footer_{
             margin-top:10vw;
         }
+        #intro_section{
+            background-color:#3F6745;
+        }
     </style>
 </head>
-<body class="p-sm-5">
+<body class="p-sm-5" style="background-color:#F5F4F0;">
 
 
 <!-- NAV BAR -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
             <div class="navbar-brand conatainer-fluid">
-                <a href="#"> <img src="images/logo.png" alt="logo"></a>
+                <a href="#"> <img class="img-fluid" src="images/logo.png" alt="logo"></a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-nav-bar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-nav-bar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsible-nav-bar">
@@ -47,14 +50,14 @@
 
 <!--INTRO SECTION-->
     <section id="intro_section">
-        <div class="mt-4 p-5 bg-success">
-            <div class="row">
+        <div class="mt-4 p-5">
+            <div class="row align-items-center">
                 <div class="col-sm-6 text-white">
-                    <h1 class="h1">Shopify Products</h1>
-                    <p>More thatn 80,000+ companies trust our business</p>
+                    <h1 class="display-1">Shopify Products</h1>
+                    <p>More thatn 80,000 companies trust our business</p>
                 </div>
-                <div class="col-sm-6 text-white">
-                    <img src="images/main.png" alt="main image">
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="images/main.png" alt="main image">
                 </div>
             </div>
         </div>
@@ -62,13 +65,13 @@
 
 <!--BODY SECTION-->
     <section id="body_section">
-        <div class="row">
+        <div class="pb-5 row align-items-center p-3">
             <div class="col-sm-4">
                 <h6 class="h6">SERVICES WE PROVIDE</h6>
                 <h4 class="h4">Build on Both: Google web stories and AMP website format</h4>
             </div>
             <div class="col-sm-4">
-                <img src="images/social.png" alt="main image">
+                <img class="d-block mx-auto img-fluid" src="images/social.png" alt="main image">
             </div>
             <div class="col-sm-4 row">
                 <div class="col-6">
@@ -83,44 +86,72 @@
         </div>
 
         <!--our creative process-->
-        <div class="pt-5">
-            <h2 class="h2">Our creative process</h2>
-            <p>financial institutions provide financial services for members and clients. It is also termed as financial intermediaries because they act as middlemen between the savers and borrowers</p>
+        <div class="mt-5 px-5 d-flex w-s-100">
+            <div class="w-50 mx-auto">
+                <h2 class="h2 col-6 text-center w-100">Our creative process</h2>
+                <p class="w-100 text-center">financial institutions provide financial services for members and clients. It is also termed as financial intermediaries because they act as middlemen between the savers and borrowers</p>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
+
+        <!---->
+        <div class="row mt-5 p-5 justify-content-center">
+            <div class="col-md-3 bg-white m-4 p-5">
+                <div class="">
+                    <img class="pb-3" src="images/search.png" alt="SEO">
+                    <div class="">
+                        <h5 class="my-3">For SEO</h5>
+                        <p class="">Improve search rankings on mobile, automatically</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 bg-white m-4 p-5">
+                <div class="">
+                    <img class="pb-3" src="images/content.png" alt="SEO">
+                    <div class="">
+                        <h5 class="my-3">For content</h5>
+                        <p class="">Your new content creation tool for better engagement</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 bg-white m-4 p-5">
+                <div class="">
+                    <img class="pb-3" src="images/conversion.png" alt="SEO">
+                    <div class="">
+                        <h5 class="my-3">For conversion</h5>
+                        <p class="">AMP experience on desktop optimized for conversion</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--why product stories-->
-        <div class="row pt-5">
+        <div class="row mt-5 align-items-center p-3">
             <div class="col-sm-6">
                 <h3 class="h3">Why Product stories?  Learm more</h3>
                 <ul>
                     <li>
-                        <h5 class="h5">SEO optimized, high google rank</h5>
+                        <h5 class="h5 pt-4">SEO optimized, high google rank</h5>
                         <p>By converting all your shopify product pages in AMP format</p>
                     </li>
                     <li>
-                        <h5 class="h5">Fast loading, low bounce rates</h5>
+                        <h5 class="h5 pt-4">Fast loading, low bounce rates</h5>
                         <p>AMP is the latest Google technology allowing websites to load at much higher speeds</p>
                     </li>
                     <li>
-                        <h5 class="h5">Imersive, direct coversion</h5>
-                        <p>The tory format is alreay a proven layout for giving users a more interactive.</p>
+                        <h5 class="h5 pt-4">Imersive, direct coversion</h5>
+                        <p>The story format is alreay a proven layout for giving users a more interactive.</p>
                     </li>
                 </ul>
             </div>
             <div class="col-sm-6">
-                <img src="images/chair.png" alt="chair">
+                <img class="img-fluid" src="images/chair.png" alt="chair">
             </div>
         </div>
 
         <!--creative intelligence-->
-        <div class="row pt-5">
+        <div class="row mt-5 align-items-center p-3">
             <div class="col-sm-6">
-                <img src="images/glad.png" alt="creative intelligence">
+                <img class="img-fluid" src="images/glad.png" alt="creative intelligence">
             </div>
             <div class="col-sm-6">
                 <h6 class="h6">CREATIVE INTELLIGENCE</h6>
@@ -136,31 +167,41 @@
         <div class="mt-4 p-5 bg-dark text-light">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1 class="h1">Contact with us</h1>
-                    <p>More than 80,000+ companies trust our business</p>
+                    <h1 class="display-1">Connect with us</h1>
+                    <p>More than 80, 000 companies trust our business</p>
                 </div>
                 <div class="col-sm-6"></div>
             </div>
 
             <!--links-->
             <div class="row">
-                <div class="col-sm-4">
-                    <img src="images/logo.png" alt="logo">
+                <div class="col-sm-4 bg-primary">
+                    <img src="images/logo-dark.png" alt="logo">
                 </div>
                 <div class="col-sm-4">
                     <nav class="navbar navbar-expand-sm">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"> <a href="#" class="nav-link">About</a></li>
-                            <li class="nav-item"> <a href="#" class="nav-link">Product</a></li>
-                            <li class="nav-iten"> <a href="#" class="nav-link">Service</a></li>
+                        <ul class="navbar-nav me-auto bg-success">
+                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+                            <li class="nav-iten"><a href="#" class="nav-link">Service</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-sm-4 bg-warning">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a href="#" class="nav-link"><img src="images/icons8-facebook.svg" alt="facebook"></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"></a> <img src="images/icons8-linkedin-circled.svg" alt="linkedin"></li>
+                            <li class="nav-item"><a href="#" class="nav-link"></a> <img src="images/icons8-youtube.svg" alt="youtube"></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <hr>
-            <small class="small">copyright 	&#169; 2022 sir.carlson@iknite.space</small>
+            <div class="d-flex justify-content-center">
+                <small class="small"> copyright &#169; 2022 sir.carlson@iknite.space</small>
+            </div>
         </div>
     </footer>
 

@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"><link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>esnik.</title>
     <!--CUSTOM CSS-->
     <style>
+        body{
+            font-family: 'Questrial', sans-serif;
+        }
         #body_section{
             margin-top:0vw;
         }
         #footer_{
             margin-top:10vw;
+            background-color: #0B120B;
         }
         #intro_section{
             background-color:#3F6745;
+        }
+        @counter-style checks{
+            system:cyclic;
+            symbols: "☑️";
+            suffix: "   ";
         }
     </style>
 </head>
@@ -53,8 +65,22 @@
         <div class="mt-4 p-5">
             <div class="row align-items-center">
                 <div class="col-sm-6 text-white">
-                    <h1 class="display-1">Shopify Products</h1>
+                    <h1 class="display-1" style="font-weight:bolder;">Shopify Products</h1>
                     <p>More thatn 80,000 companies trust our business</p>
+                    <div class="bg-light text-dark row align-items-center justify-content-center w-75">
+                        <div class="col-4">
+                            <img class="img-fluid" src="images/greenman.jpeg" alt="greenman" width="50px" height="auto">
+                        </div>
+                        <div class="col-6" style="font-size:smaller;">
+                            <span class="h5 d-block m-0">John Smith</span>
+                            <span class="m-0">Watch our intro videos</span>
+                        </div>
+                        <div class="col-2">
+                            <div class="rounded-circle" style="background-color:#F9622D; width: 65px; height: 65px;">
+                                <button class="btn"> <i class="fa fa-play fa-2x p-2" style="color:#ffffff"></i></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <img class="img-fluid" src="images/main.png" alt="main image">
@@ -134,7 +160,7 @@
         <div class="row mt-0 align-items-center justify-content-center p-3">
             <div class="col-sm-6 pt-3">
                 <h3 class="h3">Why Product stories?  Learm more</h3>
-                <ul>
+                <ul style="list-style-type:checks;">
                     <li>
                         <h5 class="h5 pt-4">SEO optimized, high google rank</h5>
                         <p>By converting all your shopify product pages in AMP format</p>
@@ -150,7 +176,21 @@
                 </ul>
             </div>
             <div class="col-sm-6 pt-5">
-                <img class="img-fluid" src="images/chair.png" alt="chair">
+                <img class="d-none img-fluid" src="images/chair.png" alt="chair">
+                <div class="d-flex justify-content-center">
+                    <div class="card bg-dark text-light p-4 d-flex justify-content-center align-items-center" style="width:80%;">
+                        <div class="card-img-top" style="width:90%; height: auto;">
+                            <img class="img-fluid" src="images/Armchair.jpg" alt="sofa">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Classic sofa</h4>
+                            <p class="card-text">
+                                our popular mika style is a morden take on the classic button down sofa 
+                            </p>
+                            <button class="btn btn-outline-secondary w-100 btn-block">Buy now for $56</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -170,23 +210,30 @@
 
 <!--FOOTER SECTION-->
     <footer id="footer_">
-        <div class="mt-4 p-5 bg-dark text-light">
-            <div class="row">
+        <div class="mt-4 p-5 text-light">
+            <div class="row align-items-end">
                 <div class="col-sm-6">
-                    <h1 class="display-1">Connect with us</h1>
+                    <h1 class="display-1" style="font-weight:bolder;">Connect with us</h1>
                     <p>More than 80, 000 companies trust our business</p>
                 </div>
-                <div class="col-sm-6"></div>
+                <div class="col-sm-6">
+                    <nav class=" navbar navbar-light bg-white">
+                        <form class="d-flex bg-light p-0 w-100 form-inline justify-content-around">
+                            <input class="form-control mr-sm-2 py-3" type="text" placeholder="Your business email" aria-label="email" style="width:60%;">
+                            <button class="btn my-2 my-sm-0 text-white" style="background-color:#F9622D; width: 35%;">Get started <span class="badge ms-3 p-2" style="background-color:#FBD0C0;"><i class='fa fa-arrow-right' style="color: white"></i></span></button>
+                        </form>
+                    </nav>
+                </div>
             </div>
 
             <!--links-->
-            <div class="row">
-                <div class="col-sm-4 bg-primary">
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-4 col-md-3">
                     <img src="images/logo-dark.png" alt="logo">
                 </div>
-                <div class="col-sm-4">
-                    <nav class="navbar navbar-expand-sm">
-                        <ul class="navbar-nav me-auto bg-success">
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <nav class="navbar navbar-expand-sm navbar-dark">
+                        <ul class="navbar-nav">
                             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
                             <li class="nav-iten"><a href="#" class="nav-link">Service</a></li>
@@ -194,13 +241,20 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-sm-4 bg-warning">
-                    <nav class="navbar navbar-expand">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"><a href="#" class="nav-link"><img src="images/icons8-facebook.svg" alt="facebook"></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"></a> <img src="images/icons8-linkedin-circled.svg" alt="linkedin"></li>
-                            <li class="nav-item"><a href="#" class="nav-link"></a> <img src="images/icons8-youtube.svg" alt="youtube"></li>
+                <div class="col-lg-4 col-md-3">
+                    <nav class="navbar navbar-expand d-flex justify-content-center">
+                        <ul class="d-none navbar-nav align-items-center">
+                            <li class="nav-item"><a href="#" class="nav-link"><img src="images/icons8-facebook.svg" alt="facebook" width="30px" height="auto"></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><img src="images/icons8-linkedin-circled.svg" alt="linkedin" width="30px" height="auto"></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><img src="images/icons8-youtube.svg" alt="youtube" width="30px" height="auto"></a></li>
                         </ul>
+                        <!---->
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram fa-2x"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                        <!---->
                     </nav>
                 </div>
             </div>

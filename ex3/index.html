@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iknite-ex3-tailwindcss</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logo-black.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
@@ -40,13 +41,14 @@
 
     <!--hero section-->
     <section id="hero">
-        <div class="bg-es_green flex flex-col mx-auto mt-10 p-12 md:flex-row align-middle text-white">
-            <div class="flex flex-col space-y-10 md:w-1/2">
+        <div class="bg-es_green flex flex-col mt-10 p-14 items-center justify-center md:flex-row text-white">
+            <div class="flex flex-col space-y-2 w-screen text-center md:text-start items-center md:items-start md:w-1/2 relative z-10">
                 <h1 class="text-8xl">Shopify Products</h1>
                 <p class="text-lg">More than 80,000 companies trust our business</p>
-                <div class="relative flex flex-row bg-white text-black mt-20 p-4 items-center justify-center sm:w-3/4">
-                    <img class="absolute items-baseline" src="images/greenman.png" alt="greenman" style="width:90px; bottom:0; left:15px;">
-                    <div class="flex flex-col space-y-2 items-stretch ml-10">
+                <!---->
+                <div class="relative flex flex-row bg-white text-black p-4 items-center justify-center w-11/12 sm:w-2/4 md:w-3/4 mt-12" style="margin-top:50px;">
+                    <img class="w-20 absolute items-baseline" src="images/greenman.png" alt="greenman" style="bottom:0; left:15px;">
+                    <div class="flex flex-col space-y-1 items-stretch ml-10 relative z-20">
                         <p class="text-xl">John Smith</p>
                         <p>Watch our intro videos</p>
                     </div>
@@ -55,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="w-9/12 flex justify-end">
                 <img src="images/main.png" alt="main image">
             </div>
         </div>
@@ -65,43 +67,43 @@
     <section id="services">
         <div class="container flex flex-col mx-auto mt-10">
             <!---->
-            <div class="flex flex-row items-center py-6 bg-white space-x-6">
-                <div class="flex flex-col">
+            <div class="flex flex-col space-y-12 md:flex-row items-center py-6 space-x-6">
+                <div class="flex flex-col space-y-2">
                     <h5>SERVICES WE PROVIDE</h5>
-                    <h2>Build on Both: Google web stories and AMP website format</h2>
+                    <h2 class="text-2xl">Build on Both: Google web stories and AMP website format</h2>
                 </div>
-                <div class="" style="width:20%;">
+                <div class="" style="width:20vw;">
                     <img src="images/thanks.png" alt="Thanks for shopping">
                 </div>
                 <div class="flex flex-row">
-                    <div>
-                        <h2>5640</h2>
+                    <div class="space-y-2">
+                        <h2 class="text-2xl">5640</h2>
                         <p>product sales per day using our tool</p>
                     </div>
-                    <div>
-                        <h2>6M+</h2>
-                        <p>Total downloads in 2019-2020</p>
+                    <div class="space-y-2">
+                        <h2 class="text-2xl">6M+</h2>
+                        <p>Total downloads in 2019 - 2020</p>
                     </div>
                 </div>
             </div>
             <!---->
-            <div class="container mx-auto flex flex-col items-center justify-center mt-10 bg-slate-500 w-screen md:w-1/2 text-center">
+            <div class="container mx-auto flex flex-col items-center justify-center w-screen md:w-1/2 text-center my-20 space-y-4">
                 <h1 class="text-4xl">Our Creative process</h1>
                 <p>Financial institutions provide financial services for members and clients. it is also termed as financial intermediaries because they act as middlemen between the servers and borrowers</p>
             </div>
             <!---->
-            <div class="container mx-auto flex flex-row items-center justify-center mt-10 bg-red-600 space-x-6 w-auto md:w-4/5">
-                <div class="bg-white p-3 flex flex-col space-y-8">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-center mt-10 md:space-x-6 md:w-4/5 space-y-10 md:space-y-0">
+                <div class="bg-white p-10 flex flex-col space-y-8 w-full h-full">
                     <img src="images/search.png" alt="search" class="w-16">
                     <h4>For SEO</h4>
                     <p>improve search rankings on mobile automatically</p>
                 </div>
-                <div class="bg-white p-3 space-y-8">
+                <div class="bg-white p-10 flex-col space-y-8 w-full">
                     <img src="images/note.png" alt="notes" class="w-16">
                     <h4>For content</h4>
                     <p>your new content creation tool for better engagement</p>
                 </div>
-                <div class="bg-white p-3 space-y-8">
+                <div class="bg-white p-10 flex-col space-y-8 w-full">
                     <img src="images/chat.png" alt="chats" class="w-16">
                     <h4>For conversion</h4>
                     <p>AMP experience on desktop optimized for conversion</p>

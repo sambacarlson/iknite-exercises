@@ -19,6 +19,9 @@
         p{
             font-weight:300;
         }
+        input[type=text]{
+            outline: none;
+        }
     </style>
 </head>
 <body class="bg-es_gray md:mx-8">
@@ -50,7 +53,7 @@
                 <h1 class="text-8xl" style="font-size:9vw">Shopify Products</h1>
                 <p class="text-lg">More than 80,000 companies trust our business</p>
                 <!---->
-                <div class="relative flex flex-row bg-white text-black p-4 items-center justify-center w-11/12 sm:w-2/4 md:w-3/4 mt-12" style="margin-top:50px;">
+                <div class="relative flex flex-row bg-white text-black p-4 items-center justify-center mt-12 w-11/12 sm:w-4/6 md:w-80 xl:w-3/5" style="margin-top:50px;">
                     <img class="w-20 absolute items-baseline" src="images/greenman.png" alt="greenman" style="bottom:0; left:15px;">
                     <div class="flex flex-col space-y-1 items-stretch ml-10 relative z-20">
                         <p class="md:text-xl">John Smith</p>
@@ -173,9 +176,21 @@
                     <h1 class="text-4xl sm:text-6xl lg:text-8xl">Connect with us.</h1>
                     <h4>More than 80,000 Companies trust our services</h4>
                 </div>
-                <div class="bg-white mt-8 md:mt-0">Company email</div>
+                <div class="flex w-full justify-center md:justify-end">
+                    <div class="bg-white text-black mt-8 md:mt-0 pl-2 flex flex-row items-center justify-between">
+                        <form>
+                            <input type="text" placeholder="Your business Email ..">
+                        </form>
+                        <a href="#" class="bg-es_orange p-3 flex flex-row items-center justify-center space-x-4">
+                            <p class="text-white">Get started</p>
+                            <div class="bg-es_fair_pink p-2">
+                                <img src="images/arrow-right.svg" alt="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-row items-center justify-between mt-14">
+            <div class="flex flex-row items-center justify-between mt-20">
                 <div class="container w-20">
                     <img src="images/logo-white.png" alt="logo">
                 </div>

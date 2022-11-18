@@ -27,21 +27,29 @@
 <body class="bg-es_gray md:mx-8">
     <!--nav bar-->
     <nav class="relative mx-auto px-0 p-6 mt-6">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center justify-start space-x-10">
-                <div class="px-0 py-2" style="width:120px;">
+        <div class="flex items-start md:items-center justify-between">
+            <div class="flex items-start md:items-center justify-start space-x-10 ml-10 md:ml-0">
+                <div class="px-0" style="width:120px;">
                     <a href="#"><img src="images/logo-black.png" alt="logo"></a>
                 </div>
-                <div class="hidden md:flex space-x-6">
-                    <a class="hover:text-es_orange" href="#">About</a>
-                    <a class="hover:text-es_orange" href="#">Product</a>
-                    <a class="hover:text-es_orange" href="#">Service</a>
-                    <a class="hover:text-es_orange" href="#">Contact</a>
+                <!-- <div class="absolute md:relative flex pl-12 md:pl-6 pb-10 md:pb-0 md:text-center md:flex-row md:space-x-6  flex-col text-start space-y-8 md:space-y-0 z-20 bg-es_gray w-full -left-10 text-xl md:text-base top-24 md:top-0"> -->
+                <div id="dropdown-menu" class="hidden w-full absolute md:relative top-24 md:top-0 -left-10 z-20">
+                    <div class="flex pl-12 md:pl-6 pb-10 md:pb-0 md:text-center md:flex-row md:space-x-6  flex-col text-start space-y-8 md:space-y-0 bg-es_gray text-xl md:text-base ">
+                        <a class="hover:text-es_orange" href="#">About</a>
+                        <a class="hover:text-es_orange" href="#">Product</a>
+                        <a class="hover:text-es_orange" href="#">Service</a>
+                        <a class="hover:text-es_orange" href="#">Contact</a>
+                        <a class="hover:text-es_green md:hidden" href="#">Login</a>
+                        <a class="hover:text-es_green md:hidden" href="#">Sign up</a>
+                    </div>
                 </div>
             </div>
             <div class="hidden md:flex space-x-3 items-center">
                 <a class="hover:text-es_green" href="#">login</a>
                 <a class="py-1 px-2 border-2 border-gray-600 rounded-md hover:bg-es_green hover:text-white" href="#">Sign up</a>
+            </div>
+            <div id="toggle-menu-btn" class="mr-10 md:hidden">
+                <img src="images/hamburger.svg" alt="hamburger">
             </div>
         </div>
     </nav>
@@ -212,5 +220,17 @@
             </div>
         </div>
     </footer>
+
+<script>
+    const toggleBtnEl = document.getElementById("toggle-menu-btn");
+    const dropdownMenuEl = document.getElementById("dropdown-menu");
+    
+    toggleBtnEl.addEventListener("click", ()=>{
+        dropdownMenuEl.classList.toggle("hidden");
+    })
+
+
+</script>
+
 </body>
 </html>

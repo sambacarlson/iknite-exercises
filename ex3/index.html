@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iknite-ex3-tailwindcss</title>
+    <link rel="shortcut icon" href="images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logo-black.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <style>
+        body{
+            font-family:'Questrial', sans-serif;
+            font-weight: 600;
+        }
+        p{
+            font-weight:300;
+        }
+        input[type=text]{
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-es_gray md:mx-8">
+    <!--nav bar-->
+    <nav class="relative mx-auto px-0 p-6 mt-6">
+        <div class="flex items-start md:items-center justify-between">
+            <div class="flex items-start md:items-center justify-start space-x-10 ml-10 md:ml-0">
+                <div class="px-0" style="width:120px;">
+                    <a href="#"><img src="images/logo-black.png" alt="logo"></a>
+                </div>
+                <!-- <div class="absolute md:relative flex pl-12 md:pl-6 pb-10 md:pb-0 md:text-center md:flex-row md:space-x-6  flex-col text-start space-y-8 md:space-y-0 z-20 bg-es_gray w-full -left-10 text-xl md:text-base top-24 md:top-0"> -->
+                <div id="dropdown-menu" class="hidden w-full absolute md:relative top-24 md:top-0 -left-10 z-20">
+                    <div class="flex pl-12 md:pl-6 pb-10 md:pb-0 md:text-center md:flex-row md:space-x-6  flex-col text-start space-y-8 md:space-y-0 bg-es_gray text-xl md:text-base ">
+                        <a class="hover:text-es_orange" href="#">About</a>
+                        <a class="hover:text-es_orange" href="#">Product</a>
+                        <a class="hover:text-es_orange" href="#">Service</a>
+                        <a class="hover:text-es_orange" href="#">Contact</a>
+                        <a class="hover:text-es_green md:hidden" href="#">Login</a>
+                        <a class="hover:text-es_green md:hidden" href="#">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-3 items-center">
+                <a class="hover:text-es_green" href="#">login</a>
+                <a class="py-1 px-2 border-2 border-gray-600 rounded-md hover:bg-es_green hover:text-white" href="#">Sign up</a>
+            </div>
+            <div id="toggle-menu-btn" class="mr-10 md:hidden">
+                <img src="images/hamburger.svg" alt="hamburger">
+            </div>
+        </div>
+    </nav>
+
+    <!--hero section-->
+    <section id="hero">
+        <div class="bg-es_green flex flex-col mt-10 p-14 items-center justify-center md:flex-row text-white">
+            <div class="flex flex-col space-y-2 w-screen text-center md:text-start items-center md:items-start md:w-1/2 relative z-10">
+                <h1 class="text-8xl" style="font-size:9vw">Shopify Products</h1>
+                <p class="text-lg">More than 80,000 companies trust our business</p>
+                <!---->
+                <div class="relative flex flex-row bg-white text-black p-4 items-center justify-center mt-12 w-11/12 sm:w-4/6 md:w-80 xl:w-3/5" style="margin-top:50px;">
+                    <img class="w-20 absolute items-baseline" src="images/greenman.png" alt="greenman" style="bottom:0; left:15px;">
+                    <div class="flex flex-col space-y-1 items-stretch ml-10 relative z-20">
+                        <p class="md:text-xl">John Smith</p>
+                        <p>Watch our intro videos</p>
+                    </div>
+                    <a href="#" class="absolute" style="right:-20px">
+                        <div class="bg-es_orange rounded-full px-4 py-4">
+                            <img src="images/arrow-right.svg" alt="arrow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="w-9/12 flex justify-end">
+                <img src="images/main.png" alt="main image">
+            </div>
+        </div>
+    </section>
+
+    <!--Services section-->
+    <section id="services">
+        <div class="container flex flex-col mx-auto mt-10">
+            <!---->
+            <div class="flex flex-col space-y-12 md:flex-row items-center py-6 space-x-6">
+                <div class="flex flex-col space-y-2 md:w-2/5">
+                    <h5 class="text-center sm:text-left px-4 md:px-0">SERVICES WE PROVIDE</h5>
+                    <h2 class="text-xl md:text-3xl text-center sm:text-left px-4 md:px-0">Build on Both: Google web stories and AMP website format</h2>
+                </div>
+                <div class="" style="width:20vw;">
+                    <img src="images/thanks.png" alt="Thanks for shopping">
+                </div>
+                <div class="flex flex-row md:w-2/5 justify-between px-2 md:px-0">
+                    <div class="space-y-2">
+                        <h2 class="text-2xl">5640</h2>
+                        <p>product sales per day using our tool</p>
+                    </div>
+                    <div class="space-y-2 text-right md:text-left">
+                        <h2 class="text-2xl">6M+</h2>
+                        <p>Total downloads in 2019-2020</p>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="container mx-auto flex flex-col items-center justify-center w-screen md:w-1/2 text-center my-20 space-y-4 px-4 md:px-0">
+                <h1 class="text-3xl md:text-4xl">Our Creative process</h1>
+                <p>Financial institutions provide financial services for members and clients. it is also termed as financial intermediaries because they act as middlemen between the servers and borrowers</p>
+            </div>
+
+            <!---->
+            <div class="flex flex-col space-y-10 md:space-y-0 md:flex-row items-center, justify-between">
+                <div class="w-full md:w-3/12">
+                    <div class="container bg-white p-10 md:p-5 lg:p-10 flex flex-col space-y-8">
+                        <img src="images/search.png" alt="search" class="w-16">
+                        <h4>For SEO</h4>
+                        <p>improve search rankings on mobile automatically</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/12">
+                    <div class="container bg-white p-10 md:p-5 lg:p-10 flex-col space-y-8">
+                        <img src="images/note.png" alt="notes" class="w-16">
+                        <h4>For content</h4>
+                        <p>your new content creation tool for better engagement</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/12">
+                    <div class="container bg-white p-10 md:p-5 lg:p-10 flex-col space-y-8">
+                        <img src="images/chat.png" alt="chats" class="w-16">
+                        <h4>For conversion</h4>
+                        <p>AMP experience on desktop optimized for conversion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Features section-->
+    <section id="features">
+        <div class="container flex flex-col mx-auto mt-14">
+            <div class="container flex flex-col md:flex-row mt-10 justify-between items-center">
+                <div class="flex flex-col space-y-6 md:w-2/5 px-4 sm:px-0">
+                    <h2 class="text-2xl md:text-3xl">Why product stories? Learn more</h2>
+                    <ul class="space-y-6" style="list-style-image:url('images/check.svg');">
+                        <li>
+                            <h3 class="text-xl">SEO optimized, hight google rank</h3>
+                            <p class="mt-1 font-normal">By converting all your shopify product pages in amp format</p>
+                        </li>
+                        <li>
+                            <h3 class="text-xl">Fast loading, low bounce rates</h3>
+                            <p class="mt-1 font-normal">AMP is the latest google technology allowing websites to load at much higher speeds</p>
+                        </li>
+                        <li>
+                            <h3 class="text-xl">Immersive, direct conversion</h3>
+                            <p class="mt-1 font-normal">The story format is already a proven layout for giving users a more interactive</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-end">
+                    <div class=" w-full md:w-5/6">
+                        <img src="images/chair-sec.png" alt="chair" class="full mt-10 md:mt-0">
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="container flex flex-col-reverse md:flex-row mt-16 justify-between items-center">
+                <div class="w-full md:w-2/5 mt-14 md:mt-0">
+                    <img src="images/glad.png" alt="happy">
+                </div>
+                <div class="md:w-2/5 space-y-4">
+                    <h5 class="text-center sm:text-left">CREATIVE INTELLIGENCE</h5>
+                    <h2 class="text-2xl md:text-3xl text-center sm:text-left">Know your Ads inside and out perform</h2>
+                    <p class="font-normal text-center sm:text-left px-4 sm:px-0">When do I feature my product? Which spokesperson is my target audience respondidng to? How to optimize my call to action? Get real-time answers to improve your creative mid-flight. And see what's worked in the past to get intel for your next campaign</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="bg-es_dark p-10 md:p-16 mt-10 flex flex-col text-white">
+            <div class="flex flex-col md:flex-row justify-between items-end">
+                <div class="flex flex-col justify-between items-center md:items-start space-y-6 text-center md:text-left w-full md:w-1/2">
+                    <h1 class="text-4xl sm:text-6xl lg:text-8xl">Connect with us.</h1>
+                    <h4>More than 80,000 Companies trust our services</h4>
+                </div>
+                <div class="flex w-full justify-center md:justify-end">
+                    <div class="bg-white text-black mt-8 md:mt-0 pl-2 flex flex-row items-center justify-between">
+                        <form>
+                            <input type="text" placeholder="Your business Email ..">
+                        </form>
+                        <a href="#" class="bg-es_orange p-3 flex flex-row items-center justify-center space-x-4">
+                            <p class="text-white">Get started</p>
+                            <div class="bg-es_fair_pink p-2">
+                                <img src="images/arrow-right.svg" alt="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-20">
+                <div class="container w-20">
+                    <img src="images/logo-white.png" alt="logo">
+                </div>
+                <nav class="flex flex-col md:space-x-6 md:flex-row items-center ">
+                    <a class="hover:text-es_orange" href="#">About</a>
+                    <a class="hover:text-es_orange" href="#">Product</a>
+                    <a class="hover:text-es_orange" href="#">Service</a>
+                    <a class="hover:text-es_orange" href="#">Contact</a>
+                </nav>
+                <div class="flex flex-row justify-between items-center space-x-4">
+                    <a href="footer"><img src="images/facebook.svg" alt="facebook"></a>
+                    <a href="footer"><img src="images/instagram.svg" alt="instagram"></a>
+                    <a href="footer"><img src="images/youtube.svg" alt="youtube"></a>
+                </div>
+            </div>
+            <div class="w-5/6 mt-6 mx-auto text-center text-es_gray">
+                <hr class="my-6">
+                <small class="text-center">copyright &copy; 2022 carlson@iknite</small>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const toggleBtnEl = document.getElementById("toggle-menu-btn");
+    const dropdownMenuEl = document.getElementById("dropdown-menu");
+    
+    toggleBtnEl.addEventListener("click", ()=>{
+        dropdownMenuEl.classList.toggle("hidden");
+    })
+
+
+</script>
+
+</body>
+</html>

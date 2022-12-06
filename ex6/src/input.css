@@ -8,14 +8,14 @@
   @apply font-poppins text-xl flex items-center justify-center m-2 ring-2 ring-[#a67c00] active:ring-[#67523d] active:ring-1 hover:bg-opacity-60 duration-150 cursor-pointer;
 }
 .numeric_btn {
-  @apply btn bg-[#ffdc73] text-[#a67c00] w-16 h-12 rounded-xl;
+  @apply btn bg-[#ffdc73] text-[#a67c00] w-12 h-10 rounded;
 }
 .operator_btn {
-  @apply btn bg-[#ffcf40] text-[#a67c00] w-16 h-12 rounded-xl;
+  @apply btn bg-[#ffcf40] text-[#a67c00] w-10 h-10 rounded-full;
 }
 .control_btn {
-  @apply btn bg-[#ffbf00] text-[#75632f] w-20 h-12 rounded-xl;
+  @apply btn bg-[#ffbf00] text-[#75632f] w-12 h-10 rounded;
 }
 .equals_btn {
-  @apply btn bg-[#ffbf00] text-[#75632f] font-poppins text-xl w-16 h-16  rounded-full;
+  @apply btn bg-[#ffbf00] text-[#75632f] font-poppins text-xl w-12 h-12  rounded-full;
 }

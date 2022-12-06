@@ -14,8 +14,8 @@
   @apply btn bg-[#ffcf40] text-[#a67c00] w-10 h-10 rounded-full;
 }
 .control_btn {
-  @apply btn bg-[#ffbf00] text-[#75632f] w-12 h-10 rounded;
+  @apply btn bg-[#ffcf40] text-[#75632f] w-12 h-10 rounded;
 }
 .equals_btn {
-  @apply btn bg-[#ffbf00] text-[#75632f] font-poppins text-xl w-12 h-12  rounded-full;
+  @apply btn bg-[#ffcf40] text-[#75632f] font-poppins text-xl w-12 h-12  rounded-full;
 }

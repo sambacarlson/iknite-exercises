@@ -9,29 +9,31 @@
 
   <section id="calculator" class="relative sm:py-16">
     <!-- calculator -->
-    <div class="flex flex-col items-center mx-auto sm:w-[500px] p-8 bg-gradient-to-b from-yellow-600 via-yellow-50 to-transparent border border-[#ffdc73] space-y-4 rounded-2xl h-[100vh] sm:h-auto">
+    <div class="flex flex-col items-center mx-auto sm:w-[500px] p-8 bg-gradient-to-b from-yellow-600 via-yellow-50 to-white border border-[#ffdc73] space-y-4 rounded-2xl h-[100vh] sm:h-auto drop-shadow-custom">
       <p class="text-[#75632f] font-mono"> DIGITAL </p>
       <!-- display-->
-      <div id="display" class="h-[150px] w-11/12 sm:w-full flex flex-col justify- border border-[#ffdc73]">
+      <div id="display" class="h-[150px] w-11/12 sm:w-full flex flex-col justify- border border-[#ffdc73] shadow-inner">
         <!-- expression  -->
         <div class="bg-[#ffffffb4] w-full h-full text-lg text-[#75632f]">
-          <input type="text" autofocus="true" class="px-2 w-full h-full text-end focus:outline-none bg-transparent">
+          <input type="text" id="expression_" autofocus="true" class="px-2 w-full h-full text-end focus:outline-none bg-transparent tracking-widest">
         </div>
-        <!-- output -->
-        <div class="bg-[#f0f0f0b0] w-full h-full flex flex-col justify-center items-end px-2 text-2xl font-semibold text-[#75632f]">0</div>
+        <!-- answer -->
+        <div id="answer_" class="bg-[#f0f0f0b0] w-full h-full flex flex-col justify-center items-end px-2 text-2xl font-semibold text-[#75632f] tracking-widest">01234567890-=+</div>
       </div>
       <!-- input -->
       <div id="input" class="flex flex-col w-11/12 sm:w-full">
         <!-- controls -->
         <div class="flex flex-row items-center justify-around mb-4">
-          <div class="control_btn">
+          <div id="cancel_" class="control_btn">
+            <!-- cancel -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".05"/>
             </svg>
           </div>
-          <div class="equals_btn">=</div>
-          <div class="control_btn">
+          <div id="equals_" class="equals_btn">=</div>
+          <div id="backspace_" class="control_btn">
+            <!-- backspace -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
             </svg>
@@ -44,29 +46,31 @@
         <div class="flex flex-row items-center justify-around space-x-5">
           <!-- numeric -->
           <div class="grid grid-cols-3 gap-2 w-80 sm:w-2/3 justify-items-center">
-            <div class="numeric_btn">1</div>
-            <div class="numeric_btn">2</div>
-            <div class="numeric_btn">3</div>
-            <div class="numeric_btn">4</div>
-            <div class="numeric_btn">5</div>
-            <div class="numeric_btn">6</div>
-            <div class="numeric_btn">7</div>
-            <div class="numeric_btn">8</div>
-            <div class="numeric_btn">9</div>
-            <div class="numeric_btn">(</div>
-            <div class="numeric_btn">0</div>
-            <div class="numeric_btn">)</div>
+            <div id="one_" class="numeric_btn">1</div>
+            <div id="two_" class="numeric_btn">2</div>
+            <div id="three_" class="numeric_btn">3</div>
+            <div id="four_" class="numeric_btn">4</div>
+            <div id="five_" class="numeric_btn">5</div>
+            <div id="six_" class="numeric_btn">6</div>
+            <div id="seven_" class="numeric_btn">7</div>
+            <div id="eight_" class="numeric_btn">8</div>
+            <div id="nine_" class="numeric_btn">9</div>
+            <div id="open__" class="numeric_btn">(</div>
+            <div id="zero_" class="numeric_btn">0</div>
+            <div id="close_" class="numeric_btn">)</div>
           </div>
           <!-- operator -->
           <div class="grid grid-rows-4 gap-2 w-1/3 justify-items-start sm:justify-items-center">
-            <div class="operator_btn">+</div>
-            <div class="operator_btn">-</div>
-            <div class="operator_btn">
+            <div id="add_" class="operator_btn">+</div>
+            <div id="subtract_" class="operator_btn">-</div>
+            <div id="multiply_" class="operator_btn">
+              <!-- miltipication -->
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
               </svg>
             </div>
-            <div class="operator_btn">
+            <div id="divide_" class="operator_btn">
+              <!-- division -->
               <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"/><circle cx="12" cy="6" r="1" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
             </div>
           </div>

@@ -34,7 +34,7 @@ var answer_value = '0';
 //get every input and add to ex_pression value
 getElts.expression_.addEventListener('input', () => {
   expression_value = getElts.expression_.value;
-  getElts.answer_.innerHTML = expression_value;
+  getElts.answer_.innerHTML = '';
 });
 
 getElts.backspace_.addEventListener('click', backSpace);
@@ -51,7 +51,7 @@ function backSpace() {
     getElts.expression_.value = expression_value; //change value of input field to substring
     expression_value = getElts.expression_.value; // update variable to new value on screen
     if(exlen==0) getElts.answer_.innerHTML = '0'; // if there are no more values to delete, set answer to zero. to be removed
-    console.log(expression_value); //for testing purpose. to be deleted
+    // console.log(expression_value); //for testing purpose. to be deleted
 }
   else return;
 }
@@ -65,9 +65,9 @@ function clearAll() {
 
 //invoked when = sign pressed
 function reply() {
-  answer_value = expression_value; //testing purpose
+  answer_value = evaluator(expression_value); //testing purpose
   getElts.answer_.innerHTML = answer_value;
-  console.log(answer_value);
+  // console.log(answer_value);
 }
 
 /* GET NUMERIC AND OPERATOR INPUT */
@@ -158,5 +158,52 @@ function getDivide() {
 function updateExpression(update) {
   getElts.expression_.value += update; 
   expression_value = getElts.expression_.value;
-  console.log(expression_value); //test to see expression value
+  getElts.answer_.innerHTML = '';
+  // console.log(expression_value); //test to see expression value
 }
+
+
+/* EXPRESSION EVALUATION */
+
+const charArr = [['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'], ['(', ')', '-', '+', '*', '/', '^', 'x', '%',]];
+
+function evaluator(expression) {
+  answer_value = '';
+  let exp_verified ='';
+  let exp_cleaned = '';
+  for(let item of expression) {
+    if(charArr[0].includes(item) || charArr[1].includes(item)) {
+      exp_verified += item;
+    }
+    else {
+      return 'Input Error';
+    }
+  }
+  exp_verified = exp_verified.split('');
+  for(let i=0; i<exp_verified.length; i++) {
+    if(exp_verified[i] == '^') exp_verified[i] = '**';
+    if(exp_verified[i] == 'x' || exp_verified[i] == 'X') exp_verified[i] = '*';
+    if(charArr[1].includes(exp_verified[i]) && exp_verified[i-1] == undefined) exp_verified.splice(i, 0, '0'); // adds zero to the beginning of expression if expression starts with an operator
+    if(charArr[0].includes(exp_verified[i-1]) && exp_verified[i] == '(') exp_verified.splice(i, 0, '*'); //adds '*' before every '(' not preceded by an operator
+    if(charArr[0].includes(exp_verified[i]) && exp_verified[i-1] == ')') exp_verified.splice(i, 0, '*'); //multiply every non-operator value after ')'
+  }
+  exp_cleaned = `${exp_verified.join('')}`;
+  console.log(`verified: ${exp_verified}`);
+  console.log(`cleaned: ${exp_cleaned}`);
+  try {
+    answer_value = eval(exp_cleaned);
+  }
+  catch(err) {
+    answer_value = '';
+  }
+  return answer_value;
+}
+
+
+// function printf(value) {
+//   console.log(value);
+//   console.log(value);
+//   printed.innerHTML = `${expression} = ${value}`;
+// }
+
+

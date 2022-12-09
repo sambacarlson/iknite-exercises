@@ -19,6 +19,10 @@ const getElts = {
   open_ : document.getElementById('open_'),
   zero_ : document.getElementById('zero_'),
   close_ : document.getElementById('close_'),
+  point_ : document.getElementById('point_'),
+  percent_ : document.getElementById('percent_'),
+  power_ : document.getElementById('power_'),
+  sqrt_ : document.getElementById('sqrt_'),
   add_ : document.getElementById('add_'),
   subtract_ : document.getElementById('subtract_'),
   multiply_ : document.getElementById('multiply_'),
@@ -131,6 +135,27 @@ function getClose() {
   updateExpression(')');
 }
 
+getElts.point_.addEventListener('click', getPoint);
+function getPoint() {
+  updateExpression('.');
+}
+
+getElts.percent_.addEventListener('click', getPercent);
+function getPercent() {
+  updateExpression('%');
+}
+
+getElts.power_.addEventListener('click', getPower);
+function getPower() {
+  updateExpression('^');
+}
+
+getElts.sqrt_.addEventListener('click', getSqrt);
+function getSqrt() { //this function is still to be implemented
+  return;
+  // updateExpression('');
+}
+
 getElts.add_.addEventListener('click', getAdd);
 function getAdd() {
   updateExpression('+');
@@ -171,6 +196,7 @@ function evaluator(expression) {
   answer_value = '';
   let exp_verified ='';
   let exp_cleaned = '';
+  if(expression.length<1) return 0; // ensured undefined is not returned when expression string is empty
   for(let item of expression) {
     if(charArr[0].includes(item) || charArr[1].includes(item)) {
       exp_verified += item;
@@ -180,12 +206,18 @@ function evaluator(expression) {
     }
   }
   exp_verified = exp_verified.split('');
+  //pass 1
   for(let i=0; i<exp_verified.length; i++) {
     if(exp_verified[i] == '^') exp_verified[i] = '**';
     if(exp_verified[i] == 'x' || exp_verified[i] == 'X') exp_verified[i] = '*';
+    if(exp_verified[i-1] == '%' && exp_verified[i] == '(') exp_verified[i] = '*(';
     if(charArr[1].includes(exp_verified[i]) && exp_verified[i-1] == undefined) exp_verified.splice(i, 0, '0'); // adds zero to the beginning of expression if expression starts with an operator
     if(charArr[0].includes(exp_verified[i-1]) && exp_verified[i] == '(') exp_verified.splice(i, 0, '*'); //adds '*' before every '(' not preceded by an operator
     if(charArr[0].includes(exp_verified[i]) && exp_verified[i-1] == ')') exp_verified.splice(i, 0, '*'); //multiply every non-operator value after ')'
+  }
+  // pass 2
+  for(let i=0; i<exp_verified.length; i++) {
+    if(exp_verified[i] == '%') exp_verified[i] = '*0.01';
   }
   exp_cleaned = `${exp_verified.join('')}`;
   console.log(`verified: ${exp_verified}`);

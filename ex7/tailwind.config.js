@@ -8,6 +8,12 @@ module.exports = {
     screens: {
       'tablet': '640px',
       'desktop': '1024px'
+    },
+    colors: {
+      'white': '#FFFFFF',
+      'black': '#FFFFFF',
+      'primary': '#1E3322',
+      'secondary': '#FD661F'
     }
   },
   plugins: [],

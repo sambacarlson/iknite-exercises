@@ -22,8 +22,8 @@ export default function Products() {
           </div>
         </div>
       </div>
-      <div className="absolute bg-[#1E3322] w-[395px] h-[629px] m-1 p-6">
-        <div className="flex flex-col items-start justify-between">
+      <div className="absolute bg-primary w-[395px] h-[600px] m-1 p-6">
+        <div className="flex flex-col items-start justify-between  h-full">
           <img src="assets/armchair.png" alt="product" className="bg-white w-[343px] h-[365px]" />
           <h4 className="text-white font-bold text-[21px]">classic Sofa</h4>
           <p className="text-white text-[12px]">Our popular Mika style is a modern take on the classic button down sofa.</p>
@@ -31,7 +31,7 @@ export default function Products() {
             <p className="text-white text-[16px] font-bold">Buy Now For $56</p>
           </div>
         </div>
-        <div className="absolute top-[80px] left-[322px] w-[143px] h-[172px] bg-[#FD661F] flex flex-col justify-around items-center">
+        <div className="absolute top-[80px] left-[322px] w-[143px] h-[172px] bg-secondary flex flex-col justify-around items-center">
           <h4 className="font-bold text-[12px] text-white"> Dashboard</h4>
           <div className="flex flex-row justify-between items-end space-x-1">
             <div className="w-[15px] h-[75px]  rounded-xl bg-white"></div>

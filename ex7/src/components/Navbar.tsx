@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   return (
     <div className="flex flex-row justify-between items-center text-[16px] font-bold text-[#3F6745]">
       <div className="flex flex-row items-center justify-between w-1/2">

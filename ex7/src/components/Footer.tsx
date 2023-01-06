@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <div className="bg-primary text-white h-[580px] w-full p-12 flex flex-col items-center justify-between">
       <div className="grid grid-cols-3 h-[380px] w-full">
@@ -12,14 +12,14 @@ export default function Footer() {
           </p>
         </div>
         <div className="col-span-2 flex flex-col justify-end items-end pb-10">
-          <div class="bg-white text-black mt-8 md:mt-0 pl-2 flex flex-row items-center justify-between">
+          <div className="bg-white text-black mt-8 md:mt-0 pl-2 flex flex-row items-center justify-between">
               <form>
                 <input type="text" placeholder="Your business Email .." />
               </form>
-              <a href="#" class="bg-secondary p-3 flex flex-row items-center justify-center space-x-4">
-                <p class="text-white">Get started</p>
-                <div class="bg-[#FF9460] p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <a href="#" className="bg-secondary p-3 flex flex-row items-center justify-center space-x-4">
+                <p className="text-white">Get started</p>
+                <div className="bg-[#FF9460] p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                 </svg>
                 </div>

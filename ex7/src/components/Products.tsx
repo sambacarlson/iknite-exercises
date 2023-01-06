@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
 
-export default function Products() {
+export default function Products(): JSX.Element {
   return (
     <div className="m-8 ml-[500px] relative">
       <div className="absolute left-[-209px] top-[143px] bg-white w-[395px] h-[403px] flex flex-col justify-around items-center">

@@ -1,9 +1,10 @@
-import React from "react";
+// import React from "react";
 import CardObj from '../Datas';
 import Cards from './Cards';
 import Products from "./Products";
+import People from './People';
 
-export default function Body() {
+export default function Body(): JSX.Element {
   return (
     <div>
       <div id="Hero" className="w-full h-[650px] p-16 text-white bg-primary grid grid-cols-3 gap-12">
@@ -82,7 +83,9 @@ export default function Body() {
         </div>
       </div>
       <div className="mt-[450px] pb-10 grid grid-cols-2">
-        <div className="bg-[#46d]"></div>
+        <div className="bg-[#46d]">
+          <People />
+        </div>
         <div className="bg-[46d]">
           <p className="text-[16px]">CREATIVE INTELLIGENCE</p>
           <h2 className="text-[40px] font-bold">Know your ads inside & out-perform.</h2>

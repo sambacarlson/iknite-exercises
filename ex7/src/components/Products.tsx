@@ -3,8 +3,8 @@
 
 export default function Products(): JSX.Element {
   return (
-    <div className="m-8 ml-[500px] relative">
-      <div className="absolute left-[-209px] top-[143px] bg-white w-[395px] h-[403px] flex flex-col justify-around items-center">
+    <div className="relative">
+      <div className="absolute left-[-179px] top-[100px] bg-white w-[345px] h-[373px] flex flex-col justify-around items-center">
         <div className="w-full pl-8">
           <div className="flex flex-row items-center space-x-2">
             <div className="w-4 h-4 rounded-full bg-[#FD661F]"></div>
@@ -22,16 +22,16 @@ export default function Products(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="absolute bg-primary w-[395px] h-[600px] m-1 p-6">
+      <div className="relative bg-primary w-[325px] h-[500px] m-1 p-6">
         <div className="flex flex-col items-start justify-between  h-full">
-          <img src="assets/armchair.png" alt="product" className="bg-white w-[343px] h-[365px]" />
+          <img src="assets/armchair.png" alt="product" className="bg-white w-[343px] " />
           <h4 className="text-white font-bold text-[21px]">classic Sofa</h4>
-          <p className="text-white text-[12px]">Our popular Mika style is a modern take on the classic button down sofa.</p>
-          <div className="w-[339px] h-[64px] ring-1 ring-[#DBE0DA4D] flex justify-center items-center">
+          <p className="text-white text-[12px] leading-6">Our popular Mika style is a modern take on the classic button down sofa.</p>
+          <div className="w-full h-[64px] ring-1 ring-[#DBE0DA4D] flex justify-center items-center">
             <p className="text-white text-[16px] font-bold">Buy Now For $56</p>
           </div>
         </div>
-        <div className="absolute top-[80px] left-[322px] w-[143px] h-[172px] bg-secondary flex flex-col justify-around items-center">
+        <div className="absolute top-[60px] right-[-60px] w-[143px] h-[172px] bg-secondary flex flex-col justify-around items-center">
           <h4 className="font-bold text-[12px] text-white"> Dashboard</h4>
           <div className="flex flex-row justify-between items-end space-x-1">
             <div className="w-[15px] h-[75px]  rounded-xl bg-white"></div>

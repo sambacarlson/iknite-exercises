@@ -7,7 +7,7 @@ import People from './People';
 export default function Body(): JSX.Element {
   return (
     <div>
-      <div id="Hero" className="w-full h-[650px] p-16 text-white bg-primary grid grid-cols-3 gap-12">
+      <div id="Hero" className="w-full h-[650px] p-16 mb-10 text-white bg-primary grid grid-cols-3 gap-12">
         <div className="col-span-1">
           <h1 className="text-[90px] font-bold leading-[120px]">Shopify Products</h1>
           <p className="text-[21px] pt-4">
@@ -26,70 +26,98 @@ export default function Body(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className="col-span-2 bg-[#460]"></div>
+        <div className="relative col-span-2 flex flex-col justify-end pl-16">
+          <div className="flex flex-row items-end">
+            <div className='mb-16'>
+              <img src="assets/frame43.png" alt="dots" className='h-40'/>
+            </div>
+            <div className="bg-[#1E3322] w-[340px] h-[390px] p-6 pb-20 flex flex-col justify-end">
+              <p className='text-[16px] font-bold'>Install the app you are just a click away to convert.</p>
+            </div>
+            <div className="absolute bottom-24 right-44">
+              <img src="assets/line2.png" alt="curve" className='w-[390px]' />
+            </div>
+            <div className='bg-secondary w-[320px] h-[340px] flex flex-row justify-center absolute bottom-40 right-28'>
+              <img src="assets/businessman.png" alt="businessman" className='w-5/6'/>
+            </div>
+            <div className="absolute bottom-36 right-80">
+              <div className="flex flex-row items-center justify-center space-x-2">
+                <svg width="33" height="57" viewBox="0 0 33 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5371 56.8543C25.4998 56.8543 32.7695 49.5882 32.7695 40.6247C32.7695 31.849 25.8 24.716 17.0982 24.4215C18.151 17.3049 23.2537 8.63434 31.0038 0.883804C16.8859 0.881628 0.304509 21.0062 0.304511 40.6261C0.304511 49.5899 7.57212 56.8557 16.537 56.8557L16.5371 56.8543Z" fill="white"/>
+                </svg>
+                <svg width="33" height="57" viewBox="0 0 33 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5371 56.8543C25.4998 56.8543 32.7695 49.5882 32.7695 40.6247C32.7695 31.849 25.8 24.716 17.0982 24.4215C18.151 17.3049 23.2537 8.63434 31.0038 0.883804C16.8859 0.881628 0.304509 21.0062 0.304511 40.6261C0.304511 49.5899 7.57212 56.8557 16.537 56.8557L16.5371 56.8543Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="grid grid-cols-3 items-center">
+      <div className="grid grid-cols-3 items-center px-12">
         <div>
           <h4 className="text-[16px]">SERVICE WE PROVIDE</h4>
-          <h2 className="text-[46px] font-bold leading-[50px]">Build on both: Google web stories and AMP website format</h2>
+          <h2 className="text-[36px] font-bold leading-[50px]">Build on both: Google web stories and AMP website format</h2>
         </div>
         <div className="flex items-center justify-center">
           <img src="assets/thanks.png" alt="thanks" />
         </div>
         <div className="flex flex-row justify-center">
-          <div>
+          <div className='p-4'>
             <h4 className="text-[35px] font-bold">5640</h4>
             <p className="text-[16px]">Product safe per day using our tool</p>
           </div>
-          <div>
+          <div className='p-4'>
             <h4 className="text-[35px] font-bold">6M+</h4>
             <p className="text-[16px]">Downloaded total in 2019-2020</p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center w-[40vw] mx-auto">
-        <h2 className="text-[50px] font-bold">Our Creative Process</h2>
-        <p>
+      <div className="flex flex-col items-center justify-center text-center w-[40vw] mx-auto my-16">
+        <h2 className="text-[50px] font-bold my-4">Our Creative Process</h2>
+        <p className='leading-7'>
           Financial institutions provide financial services for members
           and clients. It is also termed as financial intermediaries because
           they act as middlemen between the servers and borrowers.
         </p>
       </div>
+      {/* ============================= */}
       <div className="flex flex-col desktop:flex-row w-full items-center justify-center">
         <Cards {...CardObj.SEO} />
         <Cards {...CardObj.CONTENT} />
         <Cards {...CardObj.CONVERSION} />
       </div>
-      <div className="grid grid-cols-5 my-24 items-start bg-secondary h-full">
-        <div className="relative bg-[#44a] col-span-2 ">
-          <h2 className="text-[40px]">Why product stories? Learn more</h2>
+      <div className="flex flex-row my-24 items-start justify-between h-full px-12">
+        <div className="relative w-2/5 px-8 pt-8">
+          <h2 className="text-[36px] font-bold leading-[50px] pr-12">Why product stories? Learn more</h2>
           <ul className="listed ml-6">
-            <li className="pl-6">
-              <h3 className="text-[25px] font-bold">SEO optimized, high Google rank</h3>
+            <li className="pl-6 my-4 leading-10">
+              <h3 className="text-[20px] font-bold">SEO optimized, high Google rank</h3>
               <p className="text-[16px]">By converting all your Shopify product pages in AMP format.</p>
             </li>
-            <li className="pl-6">
-              <h3 className="text-[25px] font-bold">Fast loading, low bounce rates</h3>
+            <li className="pl-6 my-4 leading-10">
+              <h3 className="text-[20px] font-bold">Fast loading, low bounce rates</h3>
               <p className="text-[16px]">AMP is the latest Google technology allowing websites to load at much higher speeds.</p>
             </li>
-            <li className="pl-6">
-              <h3 className="text-[25px] font-bold">Immersive, direct conversion</h3>
+            <li className="pl-6 my-4 leading-10">
+              <h3 className="text-[20px] font-bold">Immersive, direct conversion</h3>
               <p className="text-[16px]">The story format is already a proven layout for giving users a more interactive.</p>
             </li>
           </ul>
         </div>
-        <div className="relative col-span-3 -left-44">
+        {/* =========================== */}
+        <div className="mr-12">
           <Products />
         </div>
       </div>
-      <div className="mt-[450px] pb-10 grid grid-cols-2">
-        <div className="bg-[#46d]">
+      <div className="mt-[220px] pb-10 grid grid-cols-5">
+        {/* =========================== */}
+        <div className="col-span-3 pr-4">
           <People />
         </div>
-        <div className="bg-[46d]">
+        <div className="col-span-2 px-10">
           <p className="text-[16px]">CREATIVE INTELLIGENCE</p>
-          <h2 className="text-[40px] font-bold">Know your ads inside & out-perform.</h2>
-          <p className="text-[16px]">
+          <h2 className="text-[36px] font-bold leading-10 my-4">Know your ads inside & out-perform.</h2>
+          <p className="text-[16px] leading-8">
             When do i feature my product? Which spokesperson
             is my target audience to? How to optimize my
             call to action? Get real-time answers to improve your
@@ -101,3 +129,6 @@ export default function Body(): JSX.Element {
     </div>
   );
 }
+
+
+

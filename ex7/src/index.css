@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.linked {
+  @apply duration-150 hover:underline active:text-secondary active:no-underline;
+}
+
+.button {
+  @apply px-3 py-2 duration-150 text-primary ring-1 ring-primary hover:ring-secondary hover:bg-[#F5F5F5] active:text-white active:bg-primary
+}
+
+.listed li::marker {
+  content: url('components/check.svg');
+} 

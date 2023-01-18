@@ -2,19 +2,19 @@
 
 export default function People(): JSX.Element {
   return (
-    <div className="relative flex flex-row justify-center items-center">
-      <div className="relative bg-primary h-[270px] w-[530px] py-6 flex flex-row justify-center space-x-6">
+    <div className="relative flex flex-col desktop:flex-row justify-center items-center">
+      <div className="relative bg-primary desktop:h-[270px] w-[100vw] desktop:w-[530px] py-6 flex flex-row justify-center space-x-6">
         <div className="bg-secondary">
-          <img src="assets/businessman.png" alt="person" className="w-[225px] h-[225px]"/>
+          <img src="assets/businessman.png" alt="person" className="w-[155px] desktop:w-[225px] h-auto desktop:h-[225px]"/>
         </div>
-        <div className="bg-secondary">
-          <img src="assets/armchair.png" alt="product" className="w-[225px] h-[225px]"/>
+        <div className="bg-secondary flex items-center">
+          <img src="assets/armchair.png" alt="product" className="w-[155px] desktop:w-[225px] h-auto desktop:h-[225px]"/>
         </div>
       </div>
-      <div className="absolute -top-28 right-0 p-4 bg-white w-[200px] h-[200px] flex items-center justify-center">
+      <div className="absolute -top-28 right-0 p-4 bg-white w-[200px] h-[200px] hidden desktop:flex items-center justify-center">
         <img src="assets/dot_grid.png" alt="dots" className="w-full"/>
       </div>
-      <div className="absolute -bottom-28 left-0 bg-white w-[230px] h-[225px]">
+      <div className="desktop:absolute -bottom-28 left-0 bg-white w-[300px] desktop:w-[230px] h-[225px] my-7 desktop:my-0">
         <div className="flex flex-col items-center justify-center h-full">
           <div className="rounded-full bg-secondary w-16 h-16 flex items-center justify-center">
             <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">

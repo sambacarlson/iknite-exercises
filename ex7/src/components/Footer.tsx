@@ -3,21 +3,19 @@
 
 export default function Footer(): JSX.Element {
   return (
-    <div className="bg-primary text-white h-[580px] w-full p-12 flex flex-col items-center justify-between">
-      <div className="grid grid-cols-3 h-[380px] w-full">
-        <div className="col-span-1">
-          <h1 className="text-[90px] font-bold leading-[100px]">Contact with us</h1>
-          <p className="text-[21px]">
+    <div className="bg-[#1E3322] text-white h-[580px] w-full p-6 desktop:p-12 flex flex-col items-center justify-between">
+      <div className="grid grid-cols-3 h-[380px] w-full ">
+        <div className="col-span-2 desktop:col-span-1">
+          <h1 className="text-[48px] desktop:text-[90px] font-bold leading-[55px] desktop:leading-[100px]">Contact with us</h1>
+          <p className="text-sm desktop:text-[21px]">
             More than 80,000+ companies trust our business.
           </p>
         </div>
-        <div className="col-span-2 flex flex-col justify-end items-end pb-10 relative">
-          <div className="bg-white text-black mt-8 md:mt-0 pl-2 flex flex-row items-center justify-between mr-5">
-            <form>
-              <input type="text" placeholder="Your business Email .." />
-            </form>
-            <a href="#" className="bg-secondary p-3 flex flex-row items-center justify-center space-x-4">
-              <p className="text-white">Get started</p>
+        <div className="relative col-span-3 desktop:col-span-2 flex flex-col justify-end items-center desktop:items-end pb-10">
+          <div className="bg-white text-black mt-8 pl-2 flex flex-row items-center justify-between mx-20 mr-28 desktop:mr-5">
+            <input type="text" placeholder="Your business Email .." className="w-[170px] desktop:w-full" />
+            <a href="#" className="bg-secondary p-3 flex flex-row items-center justify-center space-x-1 desktop:space-x-4">
+              <p className="text-white whitespace-nowrap">Get started</p>
               <div className="bg-[#FF9460] p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
@@ -30,19 +28,19 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 w-full">
-        <div className="">
+      <div className="grid grid-cols-3 w-full gap-4 desktop:gap-0">
+        <div className="col-span-3 desktop:col-span-1">
           <img src="assets/logo2.png" alt="logo" />
         </div>
-        <div className="">
-          <ul className="list-none flex flex-row items-center justify-around">
+        <div className="col-span-3 desktop:col-span-1">
+          <ul className="list-none flex flex-col desktop:flex-row desktop:items-center justify-around">
             <li><a href="#" className="linked">About</a></li>
             <li><a href="#" className="linked">Product</a></li>
             <li><a href="#" className="linked">Service</a></li>
             <li><a href="#" className="linked">Contact</a></li>
           </ul>
         </div>
-        <div className="flex flex-row space-x-6 items-center justify-end">
+        <div className="flex flex-row space-x-6 items-center desktop:justify-end col-span-3 desktop:col-span-1">
           {/* social icons */}
           <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 5.88235H5.22222V3.64706C5.22222 3.1 5.81667 3.05882 6 3.05882H7.88889V0H6C3.90833 0 2.33333 1.56765 2.33333 3.64706V5.88235H0V8.94118H2.33333V16H5.22222V8.94118H7.55555L8 5.88235Z" fill="white" />
@@ -58,8 +56,8 @@ export default function Footer(): JSX.Element {
 
         </div>
       </div>
-      <hr className="bg-[#3F674580] w-full" />
-      <small className="text-[12px] mx-auto text-[#3F674580]">Copyright@ 2022. Iknite studio creative</small>
+      <hr className="bg-[#3F674580] w-full mt-8 desktop:mt-0" />
+      <small className="text-[12px] mx-auto my-4 text-[#3F674580]">Copyright@ 2022. Iknite studio creative</small>
     </div>
   );
 }

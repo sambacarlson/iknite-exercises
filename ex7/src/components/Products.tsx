@@ -4,7 +4,7 @@
 export default function Products(): JSX.Element {
   return (
     <div className="relative">
-      <div className="absolute left-[-179px] top-[100px] bg-white w-[345px] h-[373px] flex flex-col justify-around items-center">
+      <div className="desktop:absolute left-[-179px] top-[100px] bg-white w-full desktop:w-[345px] mb-6 desktop:mb-0 pt-6 desktop:pt-0 desktop:h-[373px] flex flex-col justify-around items-center">
         <div className="w-full pl-8">
           <div className="flex flex-row items-center space-x-2">
             <div className="w-4 h-4 rounded-full bg-[#FD661F]"></div>
@@ -22,7 +22,7 @@ export default function Products(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="relative bg-primary w-[325px] h-[500px] m-1 p-6">
+      <div className="relative bg-primary w-full desktop:w-[325px] h-[450px] desktop:h-[500px] desktop:m-1 p-6">
         <div className="flex flex-col items-start justify-between  h-full">
           <img src="assets/armchair.png" alt="product" className="bg-white w-[343px] " />
           <h4 className="text-white font-bold text-[21px]">classic Sofa</h4>
@@ -31,7 +31,7 @@ export default function Products(): JSX.Element {
             <p className="text-white text-[16px] font-bold">Buy Now For $56</p>
           </div>
         </div>
-        <div className="absolute top-[60px] right-[-60px] w-[143px] h-[172px] bg-secondary flex flex-col justify-around items-center">
+        <div className="absolute top-[20px] desktop:top-[60px] right-[-20px] desktop:right-[-60px] w-[120px] desktop:w-[143px] h-[130px] desktop:h-[172px] bg-secondary flex flex-col justify-around items-center">
           <h4 className="font-bold text-[12px] text-white"> Dashboard</h4>
           <div className="flex flex-row justify-between items-end space-x-1">
             <div className="w-[15px] h-[75px]  rounded-xl bg-white"></div>

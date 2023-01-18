@@ -6,12 +6,12 @@ import Navbar from './components/Navbar';
 
 function App(): JSX.Element {
   return (
-    <div className="bg-[#F5F5F5] h-full p-14">
+    <div className="bg-[#F5F5F5] h-full p-0 tablet:p-14">
       <div className="mb-10">
         <Navbar />
       </div>
       <Body />
-      <div className='mt-[150px]'>
+      <div className='mt-14 desktop:mt-[150px]'>
         <Footer/>
       </div>
     </div>

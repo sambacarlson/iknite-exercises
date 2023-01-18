@@ -1,0 +1,96 @@
+  <!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body>
+
+  <section id="calculator" class="relative sm:py-16 bg-indigo-200">
+    <!-- calculator -->
+    <div class="flex flex-col items-center mx-auto sm:w-[500px] p-3 sm:p-8 bg-gradient-to-b from-yellow-600 via-yellow-50 to-white border border-[#ffdc73] space-y-4 rounded-2xl h-auto drop-shadow-custom">
+      <p class="text-[#75632f] font-mono"> COACOA </p>
+      <!-- display-->
+      <div id="display" class="w-11/12 sm:w-full flex flex-col justify- border border-[#ffdc73] shadow-inner">
+        <!-- expression  -->
+        <div class="bg-[#ffffffd3] w-full h-[75px] text-lg text-[#75632f]">
+          <input type="text" id="expression_" autofocus="true" class="px-2 w-full h-full text-end focus:outline-none bg-transparent tracking-widest">
+        </div>
+        <!-- answer -->
+        <div id="answer_" class="bg-[#f0f0f0c9] w-full h-[75px] flex flex-col justify-center items-end px-2 text-2xl font-semibold text-[#75632f] tracking-widest"> 0 </div>
+      </div>
+      <!-- input -->
+      <div id="input" class="flex flex-col w-11/12 sm:w-full">
+        <!-- controls -->
+        <div class="flex flex-row items-center justify-between mb-4">
+          <div id="cancel_" class="control_btn">
+            <!-- cancel -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+              <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".05"/>
+            </svg>
+          </div>
+          <div id="equals_" class="equals_btn">=</div>
+          <div id="backspace_" class="control_btn">
+            <!-- backspace -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            </svg>
+          </div>
+        </div>
+        
+        <hr class="w-full mb-5 border-[#ffdc73] mx-auto">
+      
+        <!-- numbers and operators -->
+        <div class="flex flex-row items-center justify-between space-x-5">
+          <!-- numeric -->
+          <div class="grid grid-cols-4 gap-2 w-11/12 justify-items-start">
+            <div id="one_" class="numeric_btn">1</div>
+            <div id="two_" class="numeric_btn">2</div>
+            <div id="three_" class="numeric_btn">3</div>
+            <div id="four_" class="numeric_btn">4</div>
+            <div id="five_" class="numeric_btn">5</div>
+            <div id="six_" class="numeric_btn">6</div>
+            <div id="seven_" class="numeric_btn">7</div>
+            <div id="eight_" class="numeric_btn">8</div>
+            <div id="nine_" class="numeric_btn">9</div>
+            <div id="zero_" class="numeric_btn">0</div>
+            <div id="open_" class="numeric_btn">(</div>
+            <div id="close_" class="numeric_btn">)</div>
+            <div id="point_" class="numeric_btn">
+              <!-- dot -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg>
+            </div>
+            <div id="percent_" class="numeric_btn">%</div>
+            <div id="power_" class="numeric_btn">^</div>
+            <div id="sqrt_" class="numeric_btn opacity-60 filter-none">
+              <!-- square root -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="m19.313 6l-.25.656l-6.157 16.063l-3-6.157L9.625 16H6v2h2.375L12 25.438l.281.562h1.5l.25-.656L20.687 8H26V6z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/></svg>
+            </div>
+          </div>
+          <!-- operator -->
+          <div class="grid grid-rows-4 gap-2 justify-items-start sm:justify-items-end">
+            <div id="add_" class="operator_btn">+</div>
+            <div id="subtract_" class="operator_btn">-</div>
+            <div id="multiply_" class="operator_btn">
+              <!-- miltipication -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+              </svg>
+            </div>
+            <div id="divide_" class="operator_btn">
+              <!-- division -->
+              <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"/><circle cx="12" cy="6" r="1" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-[#e9d698]">@inkite.space &copy 2022</p>
+    </div>
+  </section>
+
+
+  <script src="calculator.js"></script>
+</body>
+</html>
